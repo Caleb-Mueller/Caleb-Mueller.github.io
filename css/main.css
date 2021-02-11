@@ -4,3 +4,8 @@
   background-image: url("/Caleb-Mueller.github.io/Images/CA59E277-9588-4A29-BF7F-50A8E1E2F431_1_201_a.jpeg");
   background-size: cover;
 }
+
+.cover {
+  height: 300px;
+  width: 500px;
+}
