@@ -1,0 +1,80 @@
+.navmenu::after {
+    content: "";
+    background: url("https://Caleb-Mueller.github.io/Images/CA59E277-9588-4A29-BF7F-50A8E1E2F431_1_201_a.jpeg");
+    background-size: 100%;
+    opacity: 0.65;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+.navbar {
+    background-color: black;
+    opacity: .95;
+    height: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+nav a {
+    color: rgb(135, 250, 240);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    padding: 12px 10px; 
+    display: inline-block;
+}
+
+nav ul {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: 0;
+    list-style-type: none;
+}
+
+.introduction {
+    text-align:center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 100px;
+    padding-bottom: 95px;
+    margin: auto;
+}
+
+.newpage {
+    text-align: left;
+    font-size: bold;
+    color: white;
+    background: url("https://Caleb-Mueller.github.io/Images/F02FF962-9E7E-48A6-A112-659DC2785BFE.jpeg");
+    background-size: 100%;
+    padding-top: 100px;
+    opacity: 0.95;
+}
+
+.newpage li {
+    padding-top: 75px;
+    font-size: 20px;
+}
+
+.newpage #title {
+    color: black;
+}
