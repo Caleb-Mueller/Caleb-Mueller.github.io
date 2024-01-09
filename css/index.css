@@ -78,17 +78,19 @@ header {
     background-color: #333;
     transition: top 0.3s ease;
     z-index: 1000; /* Ensure the navbar is on top */
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center align the navbar items */
 }
 
 .navbar-content ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex; /* Add flex display */
 }
 
 .navbar-content li {
-    display: block;
-    text-align: center;
+    display: inline-block; /* Display navigation items inline */
 }
 
 .navbar-content li a {
@@ -123,6 +125,7 @@ header {
         width: 100%;
         background-color: #333;
         text-align: center;
+        flex-direction: column; /* Stack items vertically */
     }
 
     .navbar.responsive .navbar-content ul li {
