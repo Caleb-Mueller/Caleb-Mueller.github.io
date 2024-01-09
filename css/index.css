@@ -36,23 +36,18 @@ body {
     background-color: #555; /* Darker grey on hover */
 }
 
-/* Top section styles */
-.top {
-    padding: 60px;
-    text-align: center;
-}
-
-.introduction h1,
-.introduction h2,
-.introduction p {
-    color: #ddd; /* Light grey text */
-}
-
-/* Project and contact section styles */
+/* News, Projects, Contact section styles */
+.news,
 .projects,
 .contact {
     padding: 40px;
     text-align: center;
+}
+
+.news h2,
+.projects h2,
+.contact h2 {
+    color: #ddd; /* Light grey text */
 }
 
 /* Responsive design for different screen sizes */
