@@ -57,3 +57,65 @@ header {
     padding: 20px;
     flex-grow: 1; /* Allow content to expand and fill remaining space */
 }
+
+/* CSS in index.css */
+
+/* (Previous CSS code remains unchanged) */
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide the navbar initially when scrolled */
+.navbar.scroll {
+    top: -60px; /* Move navbar above the viewport */
+}
+
+/* Show the navbar with transition */
+.navbar.scroll .navbar-content {
+    top: 0;
+    transition: top 0.3s ease;
+}
+
+.navbar-content {
+    position: fixed;
+    top: -60px;
+    width: 100%;
+    background-color: #333;
+    transition: top 0.3s ease;
+}
+
+.navbar-content ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar-content li {
+    display: block;
+    text-align: center;
+}
+
+.navbar-content li a {
+    display: block;
+    color: #ddd;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Media query for the hamburger menu */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar.scroll ul {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
