@@ -21,41 +21,6 @@ body {
     text-align: center; /* Center align the body text */
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-/* Navigation bar styles */
-.navbar {
-    list-style-type: none;
-    background-color: #333; /* Dark grey background */
-    overflow: hidden;
-    text-align: center; /* Center the navigation items */
-    padding: 0; /* Remove default padding */
-}
-
-.navbar li {
-    display: inline-block; /* Display navigation items inline */
-    margin: 0 10px; /* Add spacing between menu items */
-}
-
-.navbar li a {
-    display: block;
-    color: #ddd;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    background-color: #555; /* Darker grey on hover */
-}
-
-/* CSS in index.css */
-
 /* ... (other CSS rules) */
 
 /* Hamburger menu styles */
@@ -74,98 +39,12 @@ header {
     font-size: 28px; /* Increase the size of hamburger icon */
     color: #ddd; /* Light grey text */
 }
-/* Hamburger menu styles */
 
-.navbar.scroll .hamburger {
-    display: block; /* Show hamburger menu on scroll */
-}
-
-/* Show the navbar with transition */
-.navbar.scroll .navbar-content {
+.navbar.responsive .navbar-content {
     top: 0;
     transition: top 0.3s ease;
 }
 
-.navbar-content {
-    position: fixed;
-    top: -60px;
-    width: 100%;
-    background-color: #333;
-    transition: top 0.3s ease;
-    z-index: 1000; /* Ensure the navbar is on top */
-    display: flex; /* Add flex display */
-    justify-content: center; /* Center align the navbar items */
-}
-
-.navbar-content ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex; /* Add flex display */
-}
-
-.navbar-content li {
-    display: inline-block; /* Display navigation items inline */
-}
-
-.navbar-content li a {
+.navbar.responsive .hamburger {
     display: block;
-    color: #ddd;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Style for information boxes */
-.information-box {
-    background-color: #333; /* Dark grey background */
-    color: #ddd; /* Light grey text */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Add padding inside the box */
-    margin: 20px; /* Add margin around the box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
-}
-
-/* Media query for the hamburger menu */
-@media screen and (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
-
-    .navbar.scroll ul {
-        display: block;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .navbar.responsive .navbar-content {
-        display: none;
-    }
-
-    .navbar.responsive .navbar-content ul {
-        display: block;
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        background-color: #333;
-        text-align: center;
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    .navbar.responsive .navbar-content ul li {
-        display: block;
-        margin: 0;
-    }
-
-    .navbar.responsive .navbar-content ul li a {
-        display: block;
-        padding: 14px 16px;
-        color: #ddd;
-        text-decoration: none;
-    }
-
-    .navbar.responsive .hamburger {
-        display: none; /* Hide hamburger menu in responsive mode */
-    }
 }
