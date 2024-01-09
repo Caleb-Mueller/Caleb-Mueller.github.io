@@ -60,6 +60,10 @@ header {
     cursor: pointer;
 }
 
+.hamburger-icon {
+    font-size: 28px; /* Increase the size of hamburger icon */
+}
+
 .navbar.scroll .hamburger {
     display: block; /* Show hamburger menu on scroll */
 }
