@@ -9,14 +9,14 @@ body, h1, h2, h3, p {
 /* Set up general styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Light grey background */
-    color: #333; /* Dark grey text */
+    background-color: #1f1f1f; /* Dark background */
+    color: #ddd; /* Light grey text */
 }
 
 /* Navigation bar styles */
 .navbar {
     list-style-type: none;
-    background-color: #2c3e50; /* Blue-green background */
+    background-color: #333; /* Dark grey background */
     overflow: hidden;
 }
 
@@ -26,14 +26,14 @@ body {
 
 .navbar li a {
     display: block;
-    color: white;
+    color: #ddd;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar li a:hover {
-    background-color: #34495e; /* Darker blue-green on hover */
+    background-color: #555; /* Darker grey on hover */
 }
 
 /* Top section styles */
@@ -42,12 +42,10 @@ body {
     text-align: center;
 }
 
-.introduction h1 {
-    color: #3498db; /* Blue color for the name */
-}
-
-.introduction h2 {
-    color: #16a085; /* Green color for the subheading */
+.introduction h1,
+.introduction h2,
+.introduction p {
+    color: #ddd; /* Light grey text */
 }
 
 /* Project and contact section styles */
