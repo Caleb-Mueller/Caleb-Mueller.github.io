@@ -45,7 +45,7 @@
 
     <!-- JavaScript placed just before the closing </body> tag -->
     <script>
-        let scrolled = false;
+        let scrolled = false; 
 
 window.onscroll = function() {
     if (!scrolled) {
@@ -75,6 +75,18 @@ function toggleMenu() {
         menu.style.display = "none";
     }
 }
+
+// Close the navbar menu if clicked outside of it
+window.onclick = function(event) {
+    const navbar = document.getElementById("introduction");
+    const menu = document.querySelector(".navbar-content ul");
+    const hamburgerIcon = document.querySelector(".hamburger");
+
+    if (navbar.classList.contains('responsive') && event.target !== hamburgerIcon && !hamburgerIcon.contains(event.target)) {
+        navbar.classList.remove('responsive');
+        menu.style.display = "none";
+    }
+};
     </script>
 </body>
 </html>
