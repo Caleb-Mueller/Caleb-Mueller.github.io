@@ -11,6 +11,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1f1f1f; /* Dark background */
     color: #ddd; /* Light grey text */
+    display: flex; /* Center content horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the entire viewport height is covered */
 }
 
 /* Navigation bar styles */
@@ -21,7 +25,7 @@ body {
 }
 
 .navbar li {
-    float: left;
+    display: inline; /* Display navigation items horizontally */
 }
 
 .navbar li a {
@@ -42,6 +46,7 @@ body {
 .contact {
     padding: 40px;
     text-align: center;
+    margin-top: 20px; /* Add space between sections */
 }
 
 .news h2,
