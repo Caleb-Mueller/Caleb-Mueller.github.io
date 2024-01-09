@@ -11,6 +11,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1f1f1f; /* Dark background */
     color: #ddd; /* Light grey text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
 header {
