@@ -31,7 +31,7 @@
             <h2>Contact</h2>
         </div>
     </div>
-    <!-- Place this script at the end of the body tag -->
+<!-- Place this script at the end of the body tag -->
 <script>
     window.onscroll = function() {
         scrollFunction();
@@ -44,6 +44,11 @@
         } else {
             navbar.classList.remove("scroll");
         }
+    }
+
+    function toggleMenu() {
+        const navbar = document.getElementById("introduction");
+        navbar.classList.toggle("responsive");
     }
 </script>
 </body>
