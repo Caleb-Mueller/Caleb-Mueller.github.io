@@ -109,7 +109,11 @@ header {
         display: block;
     }
 
-    .navbar.responsive ul {
+    .navbar.responsive .navbar-content {
+        display: none;
+    }
+
+    .navbar.responsive .navbar-content ul {
         display: block;
         position: absolute;
         top: 60px;
@@ -118,12 +122,12 @@ header {
         text-align: center;
     }
 
-    .navbar.responsive ul li {
+    .navbar.responsive .navbar-content ul li {
         display: block;
         margin: 0;
     }
 
-    .navbar.responsive ul li a {
+    .navbar.responsive .navbar-content ul li a {
         display: block;
         padding: 14px 16px;
         color: #ddd;
