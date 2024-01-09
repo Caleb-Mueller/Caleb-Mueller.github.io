@@ -45,23 +45,36 @@
 
     <!-- JavaScript placed just before the closing </body> tag -->
     <script>
-        window.onscroll = function() {
-            scrollFunction();
-        };
+        let scrolled = false;
 
-        function scrollFunction() {
-            const navbar = document.getElementById("introduction");
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                navbar.classList.add("scroll");
-            } else {
-                navbar.classList.remove("scroll");
-            }
-        }
+window.onscroll = function() {
+    if (!scrolled) {
+        scrollFunction();
+    }
+};
 
-        function toggleMenu() {
-            const navbar = document.getElementById("introduction");
-            navbar.classList.toggle("responsive");
-        }
+function scrollFunction() {
+    const navbar = document.getElementById("introduction");
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        navbar.classList.add("scroll");
+    } else {
+        navbar.classList.remove("scroll");
+    }
+}
+
+function toggleMenu() {
+    const navbar = document.getElementById("introduction");
+    const menu = document.querySelector(".navbar-content ul");
+
+    navbar.classList.toggle("responsive");
+    scrolled = true;
+
+    if (navbar.classList.contains("responsive")) {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
     </script>
 </body>
 </html>
