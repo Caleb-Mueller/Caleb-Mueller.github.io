@@ -11,11 +11,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1f1f1f; /* Dark background */
     color: #ddd; /* Light grey text */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    padding-top: 60px; /* Add padding to body to avoid hiding content under navbar */
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 header {
@@ -31,10 +29,11 @@ header {
     background-color: #333; /* Dark grey background */
     overflow: hidden;
     text-align: center; /* Center the navigation items */
+    padding: 0; /* Remove default padding */
 }
 
 .navbar li {
-    display: inline; /* Display navigation items horizontally */
+    display: inline-block; /* Display navigation items inline */
 }
 
 .navbar li a {
@@ -52,6 +51,5 @@ header {
 /* Content wrapper */
 .content-wrapper {
     text-align: center;
-    margin-top: 60px; /* Adjust for space below fixed navbar */
     padding: 20px;
 }
