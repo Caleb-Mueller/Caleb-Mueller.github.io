@@ -17,6 +17,13 @@ body {
     min-height: 100vh; /* Ensure the entire viewport height is covered */
 }
 
+/* Wrapper for content */
+.content-wrapper {
+    text-align: center;
+    width: 80%; /* Adjust the width of the content */
+    max-width: 900px; /* Set a maximum width for larger screens */
+}
+
 /* Navigation bar styles */
 .navbar {
     list-style-type: none;
@@ -53,12 +60,4 @@ body {
 .projects h2,
 .contact h2 {
     color: #ddd; /* Light grey text */
-}
-
-/* Responsive design for different screen sizes */
-@media screen and (max-width: 768px) {
-    .navbar li {
-        float: none;
-        display: inline-block;
-    }
 }
