@@ -103,6 +103,20 @@ header {
     text-decoration: none;
 }
 
+/* CSS in index.css */
+
+/* ... (previous styles remain unchanged) */
+
+/* Style for information boxes */
+.information-box {
+    background-color: #333; /* Dark grey background */
+    color: #ddd; /* Light grey text */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the box */
+    margin: 20px; /* Add margin around the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
 /* Media query for the hamburger menu */
 @media screen and (max-width: 768px) {
     .navbar ul {
