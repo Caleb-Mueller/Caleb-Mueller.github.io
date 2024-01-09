@@ -11,17 +11,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1f1f1f; /* Dark background */
     color: #ddd; /* Light grey text */
-    display: flex; /* Center content horizontally and vertically */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    min-height: 100vh; /* Ensure the entire viewport height is covered */
 }
 
-/* Wrapper for content */
-.content-wrapper {
-    text-align: center;
-    width: 80%; /* Adjust the width of the content */
-    max-width: 900px; /* Set a maximum width for larger screens */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Navigation bar styles */
@@ -29,6 +25,7 @@ body {
     list-style-type: none;
     background-color: #333; /* Dark grey background */
     overflow: hidden;
+    text-align: center; /* Center the navigation items */
 }
 
 .navbar li {
@@ -47,17 +44,9 @@ body {
     background-color: #555; /* Darker grey on hover */
 }
 
-/* News, Projects, Contact section styles */
-.news,
-.projects,
-.contact {
-    padding: 40px;
+/* Content wrapper */
+.content-wrapper {
     text-align: center;
-    margin-top: 20px; /* Add space between sections */
-}
-
-.news h2,
-.projects h2,
-.contact h2 {
-    color: #ddd; /* Light grey text */
+    margin-top: 60px; /* Adjust for space below fixed navbar */
+    padding: 20px;
 }
