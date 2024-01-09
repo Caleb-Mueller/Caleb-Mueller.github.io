@@ -6,30 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <script>
-        let scrolled = false;
-
-        window.onscroll = function() {
-            if (!scrolled) {
-                scrollFunction();
-            }
-        };
-
-        function scrollFunction() {
-            const navbar = document.getElementById("introduction");
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                navbar.classList.add("scroll");
-            } else {
-                navbar.classList.remove("scroll");
-            }
-        }
-
-        function toggleMenu() {
-            const navbar = document.getElementById("introduction");
-            navbar.classList.toggle("responsive");
-            scrolled = true;
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -66,5 +42,31 @@
             <h2>Contact</h2>
         </div>
     </div>
+
+    <!-- JavaScript placed just before the closing </body> tag -->
+    <script>
+        let scrolled = false; // Introduce a flag for scroll event
+
+        window.onscroll = function() {
+            if (!scrolled) {
+                scrollFunction();
+            }
+        };
+
+        function scrollFunction() {
+            const navbar = document.getElementById("introduction");
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                navbar.classList.add("scroll");
+            } else {
+                navbar.classList.remove("scroll");
+            }
+        }
+
+        function toggleMenu() {
+            const navbar = document.getElementById("introduction");
+            navbar.classList.toggle("responsive");
+            scrolled = true; // Set the flag to prevent scroll event when toggling menu
+        }
+    </script>
 </body>
 </html>
