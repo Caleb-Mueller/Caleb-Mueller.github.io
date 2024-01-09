@@ -30,10 +30,12 @@ header {
     overflow: hidden;
     text-align: center; /* Center the navigation items */
     padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center;
 }
 
 .navbar li {
-    display: inline-block; /* Display navigation items inline */
+    margin: 0 10px; /* Add spacing between menu items */
 }
 
 .navbar li a {
