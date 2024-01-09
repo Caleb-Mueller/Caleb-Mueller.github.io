@@ -14,6 +14,8 @@ body {
     padding-top: 60px; /* Add padding to body to avoid hiding content under navbar */
     min-height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -30,11 +32,10 @@ header {
     overflow: hidden;
     text-align: center; /* Center the navigation items */
     padding: 0; /* Remove default padding */
-    display: flex;
-    justify-content: center;
 }
 
 .navbar li {
+    display: inline-block; /* Display navigation items inline */
     margin: 0 10px; /* Add spacing between menu items */
 }
 
@@ -54,4 +55,5 @@ header {
 .content-wrapper {
     text-align: center;
     padding: 20px;
+    flex-grow: 1; /* Allow content to expand and fill remaining space */
 }
