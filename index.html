@@ -9,12 +9,17 @@
 </head>
 <body>
     <header>
-        <nav id="introduction">
-            <ul class="navbar">
-                <li><a href="#news">News</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav id="introduction" class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <div class="navbar-content">
+                <ul>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -31,25 +36,26 @@
             <h2>Contact</h2>
         </div>
     </div>
-<!-- Place this script at the end of the body tag -->
-<script>
-    window.onscroll = function() {
-        scrollFunction();
-    };
 
-    function scrollFunction() {
-        const navbar = document.getElementById("introduction");
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            navbar.classList.add("scroll");
-        } else {
-            navbar.classList.remove("scroll");
+    <!-- JavaScript placed just before the closing </body> tag -->
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const navbar = document.getElementById("introduction");
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                navbar.classList.add("scroll");
+            } else {
+                navbar.classList.remove("scroll");
+            }
         }
-    }
 
-    function toggleMenu() {
-        const navbar = document.getElementById("introduction");
-        navbar.classList.toggle("responsive");
-    }
-</script>
+        function toggleMenu() {
+            const navbar = document.getElementById("introduction");
+            navbar.classList.toggle("responsive");
+        }
+    </script>
 </body>
 </html>
