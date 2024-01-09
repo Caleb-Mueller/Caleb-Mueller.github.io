@@ -1,60 +1,66 @@
-/* General styles */
-body {
-    background-color: rgb(78, 189, 176);
+/* CSS in index.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
 }
 
-/* Navbar styles */
+/* Set up general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Navigation bar styles */
 .navbar {
-    height: 50px; /* Adjust height as needed */
-    text-align: center;
-    background-color: rgb(51, 51, 51);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.45);
-}
-
-nav ul {
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
     list-style-type: none;
+    background-color: #2c3e50; /* Blue-green background */
+    overflow: hidden;
 }
 
-nav a {
-    color: #ffe2d0;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 12px;
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    border-radius: 5px;
-    background-color: rgb(51, 51, 51);
 }
 
-/* Other section styles */
-/* Adjust margins, paddings, widths, and other dimensions as needed for responsiveness */
+.navbar li a:hover {
+    background-color: #34495e; /* Darker blue-green on hover */
+}
 
-/* Media queries for responsiveness */
+/* Top section styles */
+.top {
+    padding: 60px;
+    text-align: center;
+}
+
+.introduction h1 {
+    color: #3498db; /* Blue color for the name */
+}
+
+.introduction h2 {
+    color: #16a085; /* Green color for the subheading */
+}
+
+/* Project and contact section styles */
+.projects,
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Responsive design for different screen sizes */
 @media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens or mobile devices */
-    .navbar {
-        height: auto;
-        position: static;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-
-    nav a {
-        display: block;
-        margin: 5px 0;
+    .navbar li {
+        float: none;
+        display: inline-block;
     }
 }
-
-/* Add more media queries as needed for specific adjustments */
