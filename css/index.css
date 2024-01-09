@@ -51,17 +51,6 @@ header {
     background-color: #555; /* Darker grey on hover */
 }
 
-/* Content wrapper */
-.content-wrapper {
-    text-align: center;
-    padding: 20px;
-    flex-grow: 1; /* Allow content to expand and fill remaining space */
-}
-
-/* CSS in index.css */
-
-/* (Previous CSS code remains unchanged) */
-
 /* Hamburger menu styles */
 .hamburger {
     display: none;
@@ -85,6 +74,7 @@ header {
     width: 100%;
     background-color: #333;
     transition: top 0.3s ease;
+    z-index: 1000; /* Ensure the navbar is on top */
 }
 
 .navbar-content ul {
@@ -117,5 +107,26 @@ header {
 
     .hamburger {
         display: block;
+    }
+
+    .navbar.responsive ul {
+        display: block;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .navbar.responsive ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .navbar.responsive ul li a {
+        display: block;
+        padding: 14px 16px;
+        color: #ddd;
+        text-decoration: none;
     }
 }
