@@ -60,9 +60,8 @@ header {
     cursor: pointer;
 }
 
-/* Hide the navbar initially when scrolled */
-.navbar.scroll {
-    top: -60px; /* Move navbar above the viewport */
+.navbar.scroll .hamburger {
+    display: block; /* Show hamburger menu on scroll */
 }
 
 /* Show the navbar with transition */
@@ -138,5 +137,9 @@ header {
         padding: 14px 16px;
         color: #ddd;
         text-decoration: none;
+    }
+
+    .navbar.responsive .hamburger {
+        display: none; /* Hide hamburger menu in responsive mode */
     }
 }
